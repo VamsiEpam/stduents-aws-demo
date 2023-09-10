@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo Entered Build Phase
+      - mvn clean package
+  post_build:
+    commands:
+      - echo Build Completed
+artifacts:
+  files:
+    - target/BasicWebApplication.jar
+  discard-paths: yes
